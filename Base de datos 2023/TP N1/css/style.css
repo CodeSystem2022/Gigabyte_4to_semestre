@@ -1,0 +1,44 @@
+.der {
+    position: absolute;
+    right: 100;
+    top: 10;
+    width: 200px;
+    height: 453px;
+}
+
+.der h1 {
+    width: 200xp;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: rgba(100, 0, 255, 1);
+    color: White;
+    margin-bottom: 5px;
+}
+
+.der input {
+    padding: 10px;
+    margin: 5px, 0;
+    width: 176px;
+}
+
+a.botones::hover {
+    background-color: rgba(100, 0, 255, .4);
+}
+
+.chat {
+    position: fixed;
+    width: 150px;
+    height: 40px;
+    bottom: 0;
+    background: magenta;
+    right: 20px;
+    z-index: 0;
+    color: white;
+    text-align: center;
+    line-height: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    border-radius: 40px 40px 0 0;
+    cursor: pointer;
+}

@@ -8,11 +8,23 @@ body {
     background-color: rgb(241, 208, 115);
     margin: 0;
     padding: 0;
+    font-family: $font-stack;
 }
 
 nav {
     width: 100%;
     height: auto;
+    p {
+        font-size: 1.5;
+        padding-left: 30px;
+    }
+    .icons {
+        display: flex;
+        button {
+            background: none;
+            border-style: none;
+        }
+    }
 }
 
 main {

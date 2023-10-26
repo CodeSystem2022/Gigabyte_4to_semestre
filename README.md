@@ -6,11 +6,19 @@ En este repositorio se encuentran todos los trabajos semanales realizados por lo
 
 Integrantes del Grupo: 
 
-Juarez Santiago -
-Angel Yunes -
-Juan Pablo Barroso -
-Ramiro Riquelme -
-Gaston Duplesis -
-Andres Sidoruk -
-Valentino Grosso -
-Carlos Calvo.
+Juarez Santiago 
+
+Angel Yunes 
+
+Juan Pablo Barroso 
+
+Ramiro Riquelme 
+
+Gaston Duplesis 
+
+Andres Sidoruk 
+
+Valentino Grosso 
+
+Carlos Calvo
+

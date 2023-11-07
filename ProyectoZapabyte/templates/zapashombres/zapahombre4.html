@@ -1,0 +1,97 @@
+{% extends 'layoutZapa.html' %} {% block title %} Zapa hombres 1 {% endblock %} {% block body %}
+
+    <main class="container">
+        <div class="grid-images">
+            <div class="imagen-producto image-1">
+                <img src="/static/imgs/hombres/4/1.jpg" alt="Imagen Producto 1" />
+            </div>
+            <div class="imagen-producto image-2">
+                <img src="/static/imgs/hombres/4/2.jpg" alt="Imagen Producto 2" />
+            </div>
+            <div class="imagen-producto image-3">
+                <img src="/static/imgs/hombres/4/3.jpg" alt="Imagen Producto 3" />
+            </div>
+            <div class="imagen-producto image-4">
+                <img src="/static/imgs/hombres/4/4.jpg" alt="Imagen Producto 4" />
+            </div>
+        </div>
+
+        <section class="container">
+            <div class="products">
+                <div class="carts">
+                    <div>
+                        <img src="/static/imgs/hombres/hombre4.jpg" alt="">
+                        <p>$<span>93999</span>,00</p>
+                    </div>
+                    <div class="sizes">
+                        <p>Talla: <span class="value-size">37</span></p>
+                        <div class="container-sizes">
+                            <button class="btn-size selected">37</button>
+                            <button class="btn-size">38</button>
+                            <button class="btn-size">39</button>
+                            <button class="btn-size">40</button>
+                            <button class="btn-size">41</button>
+                            <button class="btn-size">42</button>
+                            <button class="btn-size">43</button>
+                        </div>
+                    </div>
+                    <p class="title">NIKE AIR DUNK JUMBO BLUE </p>
+                    <a href="" data-id="4" class="btn-add-cart">Agregar al carrito</a> 
+                </div>        
+            </div>
+        </section>
+        
+        <!-- Productos Detalles -->
+        <div class="container-details-product">
+            <div class="aside-details-product">
+                <div class="header-details-product">
+                    <h2>NIKE AIR DUNK JUMBO BLUE $93999,00</h2>
+                </div>
+                <div class="info-details-product">
+                    <div class="container-acordeon">
+                        <button class="acordeon-button active">
+                            Descripción
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="acordeon-content">
+                            <p>
+                                Zapatillas Nike Air Dunk Jumbo De Basket Para Hombre Código: Dv0821-400
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-acordeon">
+                        <button class="acordeon-button">
+                            Tabla de talles
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="acordeon-content">
+                            <img src="static/imgs/talles3.jpg" alt="Tabla de talles">
+                            
+                        </div>
+                    </div>
+                    <div class="container-acordeon">
+                        <button class="acordeon-button">
+                            Datos del producto
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="acordeon-content">
+                            <ul>
+                                <li>El cuero y la malla en la parte superior proporcionan un look de primera duradero.</li>
+                                <li>La Air Strobel en la planta del pie brinda comodidad justo donde la deseas.</li>
+                                <li>El nuevo sistema de agujetas utiliza ojales de cuerdas, lengüeta con correas y alas para las agujetas para ofrecerte un ajuste personalizado.</li>
+                                <li>La entresuela de espuma proporciona una amortiguación ligera y con respuesta inmediata.</li>
+                                <li>La suela de goma con el clásico punto de pivote del básquetbol aporta durabilidad, tracción y un estilo tradicional.</li>
+                                <li>La goma extendida alrededor del borde de la suela da más durabilidad.</li>
+                                <li>Las muescas pequeñas en los revestimientos de cuero te ayudan a pisar con naturalidad.</li>
+                                <li>La presilla de agarre en la lengüeta permite ponerte y quitarte el calzado con facilidad.</li>
+                                <li>La lengüeta y la marca son casi dos veces más grandes que en el Dunk original.</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </main>
+        
+
+    <script type="module" src="static/js/custom.js"></script>
+
+{% endblock %} 

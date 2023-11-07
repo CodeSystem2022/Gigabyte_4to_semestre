@@ -1,13 +1,13 @@
-from flask import Flask, render_template, request, redirect, render_template
+from flask import Flask, render_template, request, redirect, render_template #crear la aplicacion web con Python
 
-from conexionDBUsuarios import ConexionDBUsuario
+from conexionDBUsuarios import ConexionDBUsuario # interactua con nuestra base de datos
 
 app = Flask(__name__)
 
 
 @app.route('/index')  # Definiendo la ruta raíz
 def principal():
-    return render_template('index.html')
+    return render_template('index.html') #renderizar plantillas HTML
 
 @app.route('/hombres')
 def hombres():
@@ -167,6 +167,8 @@ def zapanino11():
 def zapanino12():
     return render_template('zapasnino/zapanino12.html')
 
+# maneja la informacion del formulario (nommbre, email, correo) y
+# guarda la solicitud en la base de datos y devuelve un mensaje
 
 @app.route('/insertar_comentario', methods=['POST'])
 def insertar_comentario():
@@ -180,8 +182,9 @@ def insertar_comentario():
 
         return redirect('/index')
 
+# Para iniciar la aplicacion
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True) # ejecuta localmente la aplicacion y muestra mensajes de error
 
 
 

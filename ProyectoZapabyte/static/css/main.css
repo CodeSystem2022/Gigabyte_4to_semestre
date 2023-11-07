@@ -58,12 +58,7 @@ header {
     background-color: #ffffff;
 }
 
-.menu-hamburger {
-    display: none;
-    font-size: 30px;
-    color: #374151;
-    cursor: pointer;
-}
+
 
 .cart {
     width: 39px;
@@ -235,6 +230,9 @@ p.author a {
 
 .count-product {
     margin-left: 16px;
+}
+.menu-hamburger {
+    display: none;
 }
 
 
@@ -583,6 +581,12 @@ footer {
     text-transform: capitalize;
 }
 
+.container-social-responsive {
+    display: flex;
+    gap: 15px;
+    padding: 0 20px;
+}
+
 .youtube i {
     color: #da0000;
 }
@@ -673,4 +677,284 @@ footer {
   .container-policies ul {
       gap: 10px; /* Reducir el espacio entre los elementos de las listas */
   }
+}
+
+@media (max-width: 468px) {
+    body {
+		text-align: -webkit-center;
+        width: 100%;
+        contain: content;
+	}
+    .header .menu-nav {
+        display: none;
+        list-style: none;
+        gap: 20px;
+        width: auto;
+    }
+
+	.logo{
+		text-align: center;
+	}
+	.imagenLogo {
+
+		width: 40%;
+		height: auto;
+
+	}
+	.menu-responsive{
+		display: none;
+	}
+	.cart {
+		right: 5%;
+		position: absolute;
+		width: 39px;
+		height: 38px;
+	}
+	.menu-hamburger {
+		margin-top: 36px;
+		display: flex;
+		flex: 1;
+		order: 1;
+		margin-left: 0%;
+        position: absolute;
+		font-size: 30px;
+		color: #374151;
+		cursor: pointer;
+	}
+	
+	.count-product {
+		top: 40px;
+		right: 5%;
+		position: absolute;
+		margin-left: 16px;
+	}
+	.container {
+		max-width: 330px;
+	}
+
+	.header {
+		align-items: center;
+	}
+
+	.logo {
+		font-size: 24px;
+	}
+
+	.menu-responsive{
+		width: 100%;
+	}
+
+	.card-payment {
+		padding: 10px 15px;
+		height: 650px;
+	}
+
+	.container-sizes {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.btn-add-to-cart {
+		font-size: 14px;
+	}
+
+	.footer {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 70px 1fr;
+		align-items: center;
+		gap: 30px;
+	}
+
+	.container-social {
+		margin-top: 10px;
+		grid-row: 2/-1;
+		display: flex;	
+		gap: 20px;
+		margin-bottom: 20px;
+		justify-content: space-evenly;
+	}
+
+	.container-social i {
+		font-size: 20px;
+	}
+
+	.container-social span {
+		display: none;
+	}
+
+	.container-review {
+		max-width: 100%;
+	}
+	.footer {
+        grid-template-columns: 1fr;
+        /* Cambiar a una sola columna */
+        grid-template-rows: auto auto auto;
+        /* Ajustar la disposición de las filas según el contenido */
+        text-align: center;
+        /* Centrar el contenido en pantallas pequeñas */
+        padding: 50px 20px;
+        /* Reducir el espacio interno del footer */
+    }
+    .footer .logo {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-bottom: 20px;
+        /* Añadir espacio entre el logo y los enlaces sociales */
+    }
+    .container-social {
+        grid-row: auto;
+        /* Restablecer la disposición del grid */
+        flex-direction: column;
+        /* Cambiar la dirección del flex container a columna */
+        align-items: center;
+        /* Centrar elementos horizontalmente */
+        text-align: center;
+        /* Centrar texto */
+        gap: 20px;
+        /* Aumentar el espacio entre elementos */
+        margin-top: 20px;
+        /* Agregar espacio en la parte superior */
+    }
+    .container-social a {
+        font-size: 14px;
+        /* Reducir el tamaño de la fuente */
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+	.container-social-responsive {
+        display: flex;
+        gap: 15px;
+        padding: 0 20px;
+		justify-content: center;
+    }
+    .user-footer ul,
+    .container-policies ul {
+        gap: 10px;
+        /* Reducir el espacio entre los elementos de las listas */
+    }
+	.menu-nav-responsive li a {
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+	.logo-responsive {
+        padding: 30% 0px 0 0px;
+		color: black;
+    }
+	.cart-products{
+		position: absolute!important;
+		top: 115px;
+		width: 100%;
+		background-color: #fff;
+		padding: 0 18px;
+		box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+		display: none;
+		min-width: 290px;
+	}
+	.btn-close-responsive{
+		font-size: 40px;
+	}
+    .body-details-product .info-product h2 {
+        padding-top: 50px;
+        font-size: 24px;
+    }
+
+    #item-2:checked~.cards #selector-1,
+    #item-1:checked~.cards #selector-3,
+    #item-3:checked~.cards #selector-2 {
+        transform: translateX(-30%) scale(0.8); /* Ajustado para pantallas más pequeñas */
+        opacity: 0.6;
+        z-index: 0;
+    }
+
+    #item-3:checked~.cards #selector-1,
+    #item-1:checked~.cards #selector-2,
+    #item-2:checked~.cards #selector-3 {
+        transform: translateX(30%) scale(0.8); /* Ajustado para pantallas más pequeñas */
+        opacity: 0.6;
+        z-index: 0;
+    }
+
+    #item-1:checked~.cards #selector-1,
+    #item-2:checked~.cards #selector-2,
+    #item-3:checked~.cards #selector-3 {
+        transform: translateX(0) scale(1);
+        z-index: 1;
+    }
+    #imgCard {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        position: center;
+    }
+    .body-details-product .info-product .features-product {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .products {
+        padding-top: 3%;
+        padding-right: 5%;
+        padding-left: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menu-responsive ul {
+        list-style: none;
+        padding: 0;
+    }
+
+}
+	
+
+
+
+
+
+/* Estilos para el menú responsive */
+.menu-responsive {
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgb(200 255 240);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+}
+
+.menu-responsive p {
+	padding: 0 20px;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.menu-responsive nav {
+    padding: 20px 0;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    text-align: center;
+}
+
+.menu-responsive li {
+    margin-bottom: 10px;
+}
+
+.menu-responsive a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.menu-responsive a:hover {
+    color: #f1c40f;
 }

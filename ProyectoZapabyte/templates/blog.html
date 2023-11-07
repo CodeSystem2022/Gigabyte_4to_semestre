@@ -1,0 +1,31 @@
+{% extends 'layout-contact.html' %} {% block title %} Contacto {% endblock %} {% block body %}
+
+<!--NO CAMBIAR NADA DE ACA-->
+<div class="contact-container">
+    <h1>Contacto</h1>
+    <p>¡Esperamos con ansias tus consultas! Estamos aquí para responder a todas tus preguntas sobre nuestros productos.</p>
+    <form mb-3 id="contact-form" method="POST" action="/insertar_comentario"><!--NO CAMBIAR NADA DE ACA-->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        <button type="submit">Enviar Mensaje</button>
+        <div id="alert-container" style="display: none;">
+            El mensaje ha sido enviado exitosamente. ¡Te responderemos pronto!
+        </div>
+    </form><!--NO CAMBIAR NADA DE ACA-->
+</div>
+<!--NO SACAR, POR ESTO ANDA EL CARRITO, NO PREGUNTES PORQUE-->
+<section class="container">
+    <div class="products">
+        <div class="carts">
+            <div>        
+            </div>
+        </div>
+</section>
+<!--NO SACAR, POR ESTO ANDA EL CARRITO, NO PREGUNTES PORQUE-->
+
+
+{% endblock %}

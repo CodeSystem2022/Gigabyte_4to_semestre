@@ -1,0 +1,105 @@
+
+{% extends 'layout.html' %} {% block title %} Index {% endblock %} {% block body %}
+
+
+    <!-- Productos Detalles -->
+
+    <div class="container__slider">
+
+        <div class="container1">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+    
+            <div class="cards">
+                <label class="card" for="item-1" id="selector-1">
+                    <img id="imgCard" src="static/img/carrusel1.jpg">
+                </label>
+                <label class="card" for="item-2" id="selector-2">
+                    <img id="imgCard" src="static/img/carrusel4.jpg">
+                </label>
+                <label class="card" for="item-3" id="selector-3">
+                    <img id="imgCard" src="static/img/carrusel3.jpg">
+            </div>
+        </div>
+    </div>
+        <!--NO SACAR, POR ESTO ANDA EL CARRITO, NO PREGUNTES PORQUE-->
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>        
+                </div>
+            </div>
+    </section>
+    <!--NO SACAR, POR ESTO ANDA EL CARRITO, NO PREGUNTES PORQUE-->
+
+    <div class="body-details-product">
+        <div class="info-product">
+            <h2>¡Bienvenidos a Zapabyte!</h2>
+            <div class="info">
+                <ul>
+                    <li>En ,Zapabyte estamos dando los primeros pasos en la industria de las zapatillas, pero llevamos en nuestros corazones la pasión por el calzado y la moda. A pesar de ser una empresa emergente, estamos comprometidos en ofrecer una experiencia única a nuestros clientes.</li>
+                    <li>                     
+                        Nuestra historia es breve, pero nuestro espíritu es fuerte. Nos enorgullece ser la nueva cara del calzado urbano. A pesar de nuestra juventud en el mercado, ya estamos dejando huella con una selección cuidadosamente curada de zapatillas que combinan estilo y comodidad como ninguna otra.
+                    </li>
+                    <li>
+                        En Zapabyte, no solo vendemos zapatillas, sino que también creamos una declaración de moda. Nuestro objetivo es ser tu compañero en la búsqueda de un estilo auténtico y moderno. Queremos que nuestras zapatillas sean parte de tu historia y te ayuden a destacar en cualquier lugar al que vayas.
+                    </li>
+                    <li>    
+                        Nos inspiramos en la innovación, la creatividad y la diversidad. Es por eso que estamos en constante evolución, adaptándonos a las últimas tendencias en diseño y moda. Nuestro logo cambia con la misma rapidez que cambia la vida en la ciudad, porque somos dinámicos, versátiles y apasionados por estar siempre a la vanguardia.
+                    </li>
+                    <li>
+                        En Zapabyte, entendemos que cada individuo tiene un círculo único de influencia y estilo. Nos interesa tu mundo, queremos ser parte de tu círculo y ayudarte a expresarte a través de nuestras zapatillas. Por eso, nuestra frase es #ZAPABYTEYOURCIRCLE, porque juntos creamos un estilo único y auténtico.
+                    <li>
+                        ¿Estás listo para unirte a nosotros en este emocionante viaje?
+                    </li>
+                </ul>
+            </div>
+            <div class="features-product">
+                <div class="feature-product shipping">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h4>Envío gratis</h4>
+                    <p>En compras a partir de $50,000.00</p>
+                </div>
+                <div class="feature-product return">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <h4>Muy facil de devolver ante cualquier problema</h4>
+                    <p>Solo debe llamar a un número de telefono.</p>
+                </div>
+                <div class="feature-product delivery">
+                    <i class="fa-solid fa-globe"></i>
+                    <h4>Entrega a nivel nacional</h4>
+                    <p>Entrega rápida a todo el país.</p>
+                </div>
+                <div class="feature-product refund">
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                    <h4>Política de reembolsos</h4>
+                    <p>60 días de devolución por cualquier motivo.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+
+</main>
+
+</section>
+
+
+<!-- <div id="carrusel-contenido">
+    <div id="carrusel-caja">
+        <div class="carrusel-elemento">
+            <img id="carrusel2a" class="imagenes" src="/static/img/carrusel2.jpg"   >
+        </div>
+        <div class="carrusel-elemento">   
+            <img id="carrusel2b" class="imagenes" src="/static/img/envios1.jpg" >
+        </div>
+        <div class="carrusel-elemento">   
+            <img id="carrusel2c" class="imagenes" src="/static/img/mp.jpg" >                        
+        </div>
+    </div>
+</div> -->
+
+{% endblock %}

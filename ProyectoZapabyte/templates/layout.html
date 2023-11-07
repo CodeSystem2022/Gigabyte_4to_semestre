@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapabyte</title>
+    <link rel="icon" href="static\img\zapaz.ico">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/carrusel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+
+</head>
+<header>
+    <div class="header container">
+        <h1 class="logo">
+            <a href="index">
+                <img class="imagenLogo" src="static/imgs/nuevologo.png" alt="ZAPABYTE"></a>
+        </h1>
+        <div class="menu-hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <nav>
+            <ul class="menu-nav">
+                <li><a href="index">Inicio</a></li>
+                <li><a href="hombres">Hombres</a></li>
+                <li><a href="mujeres">Mujeres</a></li>
+                <li><a href="niños">Infantil</a></li>
+                <li><a href="login">Mi cuenta</a></li>
+                <li><a href="blog">Contacto</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- CARRITO -->
+        <div class="cart-container">
+            <div class="header-section">
+                <div>
+                    <img onclick="showCart(this)" class="cart" src="/static/img/cart.svg" alt="">
+                    <p class="count-product">0</p>
+                </div>
+                <div class="cart-products" id="products-id">
+                    <p class="close-btn" onclick="closeBtn()">X</p>
+                    <h3>Mi carrito</h3>
+                    <div class="card-items">
+                        <!-- Contenido del carrito -->
+                    </div>
+                    <h2>Total: $<strong class="price-total">0.00</strong></h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="menu-responsive">
+        <h1 class="logo-responsive">ZAPABYTE</h1>
+        <p>
+            Bienvenidos a nuestra tienda!
+        </p>
+        <div class="container-social-responsive">
+            <a href="#" class="facebook">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" class="youtube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://github.com/santijuare/Zapabyte/tree/main" class="github">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" class="twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
+        <nav>
+            <ul class="menu-nav-responsive">
+                <li><a href="index">Inicio</a></li>
+                <li><a href="hombres">Hombres</a></li>
+                <li><a href="mujeres">Mujeres</a></li>
+                <li><a href="niños">Infantil</a></li>
+                <li><a href="mi cuenta">Mi cuenta</a></li>
+            </ul>
+        </nav>
+        <!-- Botón para cerrar el menú responsive -->
+        <div class="btn-close-responsive">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+
+    <!-- Capa de superposición (overlay) -->
+    <div id="overlay"></div>
+    <script type="module" src="static/js/custom.js"></script>
+
+</header>
+
+<body>
+
+    <div class="container py-3">
+        {% block body %} {% endblock %}
+    </div>
+
+
+
+    <footer>
+        <div class="container footer">
+            <h1 class="logo">ZAPABYTE</h1>
+
+            <div class="container-social">
+                <a href="https://twitter.com/DevoxPosting/status/1700946772716322837" class="facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://www.youtube.com/channel/UC6ZqzTu-T77_yp1TCIIy93g" class="youtube">
+                    <i class="fa-brands fa-youtube"></i>
+                    <span>Youtube</span>
+                </a>
+                <a href="https://github.com/santijuare/Zapabyte/tree/main" class="github">
+                    <i class="fa-brands fa-github" style="color: #000000;"></i>
+                    <span>Github</span>
+                </a>
+                <a href="https://twitter.com/sindicatodedom4/status/1701064980219523483" class="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+            </div>
+
+            <div class="user-footer">
+                <ul>
+                    <li><a href="login">Mi cuenta</a></li>
+                    <li><a href="registro">Registrate</a></li>
+                    <li><a href="blog">Contáctanos</a></li>
+                </ul>
+            </div>
+
+            <div class="container-policies">
+                <ul>
+                    <li>
+                        <a href="privacety" target="_blank">Política de privacidad</a>
+                    </li>
+                    <li>
+                        <a href="devoluciones" target="_blank">Política de devoluciones</a>
+                    </li>
+                    <li>
+                        <a href="terminosCompra" target="_blank">Políticas de compra</a>
+                    </li>
+                    <li>
+                        <a href="preguntas" target="_blank">Preguntas Frecuentes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/js/custom.js"></script>
+
+</html>

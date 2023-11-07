@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/static/css/styleLogin.css">
+</head>
+
+<header>
+    <div class="header container">
+        <h1 class="logo">ZAPABYTE</h1>
+        <nav>
+            <ul class="menu-nav">
+                <li><a href="index">Inicio</a></li>
+                <li><a href="hombres">Hombres</a></li>
+                <li><a href="mujeres">Mujeres</a></li>
+                <li><a href="niños">Infantil</a></li>
+                <li><a href="login">Mi cuenta</a></li>
+                <li><a href="blog">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="carrito">
+            <img src="static/img/cart.svg" alt="" />
+            <div class="count-products-cart">0</div>
+        </div>
+    </div>
+    </div>
+</header>
+
+<body>
+    <div class="container py-3">
+        {% block body %} {% endblock %}
+    </div>
+</body>
+
+<footer>
+    <div class="container footer">
+        <h1 class="logo">ZAPABYTE</h1>
+
+        <div class="container-social">
+            <a href="https://twitter.com/DevoxPosting/status/1700946772716322837" class="facebook">
+                <i class="fa-brands fa-facebook"></i>
+                <span>Facebook</span>
+            </a>
+            <a href="https://www.youtube.com/channel/UC6ZqzTu-T77_yp1TCIIy93g" class="youtube">
+                <i class="fa-brands fa-youtube"></i>
+                <span>Youtube</span>
+            </a>
+            <a href="https://github.com/santijuare/Zapabyte/tree/main" class="github">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+            </a>
+            <a href="https://twitter.com/sindicatodedom4/status/1701064980219523483" class="twitter">
+                <i class="fa-brands fa-twitter"></i>
+                <span>Twitter</span>
+            </a>
+        </div>
+
+        <div class="user-footer">
+            <ul>
+                <li><a href="#">Mi cuenta</a></li>
+                <li><a href="blog">Registrate</a></li>
+                <li><a href="blog">Contáctanos</a></li>
+            </ul>
+        </div>
+
+        <div class="container-policies">
+            <ul>
+                <li>
+                    <a href="privacety" target="_blank">Política de privacidad</a>
+                </li>
+                <li>
+                    <a href="devoluciones" target="_blank">Política de devoluciones</a>
+                </li>
+                <li>
+                    <a href="terminosCompra" target="_blank">Políticas de compra</a>
+                </li>
+                <li>
+                    <a href="preguntas" target="_blank">Preguntas Frecuentes</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+</html>

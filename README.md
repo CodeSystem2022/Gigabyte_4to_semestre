@@ -14,7 +14,7 @@ En este repositorio se encuentran todos los trabajos semanales realizados por lo
 |  Ramiro Riquelme | [Ramiro Riquelme](https://github.com/RamiroRiquelme)  |
 |  Gaston Duplesis | [Gaston Duplesis](https://github.com/Tongaas)  |
 |  Andres Sidoruk |  [Andres Sidoruk](https://github.com/sidorukandres) |
-| Valentino Grosso  | [Valentino Grosso]([https://github.com/rec0d3](https://github.com/valegrosso1))  |
+| Valentino Grosso  | [Valentino Grosso](https://github.com/valegrosso1)  |
 | Carlos Calvo            | [Carlos Calvo](https://github.com/rec0d3)  |
 
 

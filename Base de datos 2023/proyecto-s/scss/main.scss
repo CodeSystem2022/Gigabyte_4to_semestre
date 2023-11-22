@@ -1,9 +1,25 @@
 $primary-color: rgb(90, 89, 28);
-$secundary-color: rgb(208, 158, 40);
+$secondary-color: rgb(208, 158, 40);
 $tertiary-color: rgb(250, 249, 185);
-$primary-text-color:rgb(63, 38, 1);
-$font-stack:'IBM Plex Sans',
+$quaternion-color: orange;
+$primary-text-color: rgb(63, 38, 1);
+$font-stack: 'IBM Plex Sans',
 sans-serif;
+$paragraph-size: 1.5em;
+@mixin flexCenter($direction, $content, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $align;
+}
+
+@mixin buttonStyle {
+    button {
+        background: none;
+        border-style: none;
+    }
+}
+
 body {
     background-color: rgb(241, 208, 115);
     margin: 0;
@@ -13,22 +29,108 @@ body {
 
 nav {
     width: 100%;
-    height: auto;
+    display: flex;
+    justify-content: space-between;
+    color: $primary-text-color;
     p {
-        font-size: 1.5;
+        font-size: 1.5em;
         padding-left: 30px;
     }
     .icons {
         display: flex;
-        button {
-            background: none;
-            border-style: none;
+        gap: 15px;
+        .icons {
+            display: flex;
+            gap: 15px;
+            @include buttonStyle;
+        }
+    }
+}
+
+article {
+    width: auto;
+    color: $primary-text-color;
+    @include flexCenter(row, space-between, center);
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 70px;
+    .info-section {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        gap: 25px;
+    }
+    h1 {
+        font-size: 3em;
+        padding: 0px;
+        margin: 0px;
+    }
+    p {
+        font-size: $paragraph-size;
+    }
+    button {
+        width: 12vw;
+        padding: 20px;
+        background-color: $quaternion-color;
+        border: none;
+        border-radius: 35px;
+        color: white;
+        font-size: 1em;
+    }
+    .image-section {
+        width: 50%;
+        background-color: rgb(119, 109, 64);
+        img {
+            width: 25vw;
+            border-radius: 19px;
         }
     }
 }
 
 main {
     background-color: $primary-color;
+}
+
+.section1 section {
+    width: auto;
+    height: auto;
+    background-color: rgb(214, 201, 176);
+    padding: 60px;
+    h2 {
+        color: $primary-text-color;
+        font-size: 2em;
+    }
+    .product-cart {
+        width: 12vw;
+        height: auto;
+        background-color: $secondary-color;
+        color: $primary-text-color;
+        padding: 20px;
+        border-radius: 8px;
+        img {
+            width: 200px;
+            height: 250px;
+            background-image: cover;
+            border-radius: 6px;
+        }
+    }
+    .card-section1 {
+        display: flex;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        column-gap: 200px;
+        row-gap: 200px;
+    }
+}
+
+.section2 {
+    @extend .section1;
+    .product-card {
+        background-color: $tertiary-color;
+        color: rgb(37, 51, 12);
+    }
 }
 
 footer {
